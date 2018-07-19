@@ -1,4 +1,4 @@
-<html>
+
 # HondaFinder
 Honda Finder
 
@@ -18,11 +18,18 @@ Honda Finder
     property   -  CarID   [PK]  int
     
     property   -  Model         string
+    
     property   -  Year          int
+    
     property   -  Mileage       int
+    
     property   -  Condition     string   (prooboly "great" "fair" "weathered" or something similar
+    
     property   -  Price         double
+    
     property   -  Color         string
+    
+    
     
     
     
@@ -30,11 +37,20 @@ Honda Finder
 2.  name       -  Customer
 
     property   -  CustomerID  [PK] int
+    
     property   -  FName            string
+    
     property   -  LName            string
+    
     property   -  PhoneNumber      string (only numbers regX expression)
+    
     property   -  EmailAddress     string [EMAIL]
+    
     property   -  HomeAddress      string
+ 
+ 
+ 
+ 
  
  
  
@@ -42,8 +58,11 @@ Honda Finder
 3.  name       -  Orders
 
     property   -  OrderID  [PK]   int
+    
     property   -  CarID  [FK]     int
+    
     property   -  CustomerID [FK] int
+    
     property   -  DatePlace       DateTime
     
     
@@ -70,4 +89,4 @@ Honda Finder
                     
            
            
-</html>
+
