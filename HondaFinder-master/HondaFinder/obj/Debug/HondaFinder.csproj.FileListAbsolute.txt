@@ -28,3 +28,4 @@ C:\Users\cgruse\Source\Repos\HondaFinder\HondaFinder-master\HondaFinder\bin\Debu
 C:\Users\cgruse\Source\Repos\HondaFinder\HondaFinder-master\HondaFinder\bin\Debug\EntityFramework.xml
 C:\Users\cgruse\Source\Repos\HondaFinder\HondaFinder-master\HondaFinder\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\cgruse\Source\Repos\HondaFinder\HondaFinder-master\HondaFinder\obj\Debug\HondaFinder.csproj.CopyComplete
+C:\Users\cgruse\Source\Repos\HondaFinder\HondaFinder-master\HondaFinder\obj\Debug\HondaFinder.Migrations.AddedClasses.resources

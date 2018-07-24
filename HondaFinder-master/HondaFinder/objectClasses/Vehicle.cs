@@ -25,6 +25,4 @@ public class Vehicle
 
     public string Color { get; set; }
 
-    public int Cost { get; set; }
-
 }

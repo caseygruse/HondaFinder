@@ -13,7 +13,7 @@ public class CustomerOrder
 	}
 	[Key]
     public int OrderID { get; set; }
-
+	
     public int VinNumber { get; set; }
 
     public int CustomerID { get; set; }
