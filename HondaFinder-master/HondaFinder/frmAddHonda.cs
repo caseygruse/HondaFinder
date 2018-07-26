@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace HondaFinder
 {
     public partial class frmAddHonda : Form
@@ -147,11 +149,39 @@ namespace HondaFinder
 			return false;
 		}
 
+		private bool AllComboBoxesAreFilled()
+		{
+			foreach(var c in this.Controls)
+			{
+				if(c is ComboBox)
+				{
+					if(Convert.ToString((c as ComboBox).SelectedItem) == "")
+					{
+						return false;
+					}
+				}
+			}
+			return true;
+		}
+
 		private void btnSearch_Click(object sender, EventArgs e)
 		{
-			if (ValidateMileage(txtMileage) && ValidatePrice(txtPrice) && ValidateColor(txtColor))
+			if (ValidateMileage(txtMileage) && ValidatePrice(txtPrice) && ValidateColor(txtColor) && AllComboBoxesAreFilled())
 			{
-				MessageBox.Show("works");
+				Vehicle v = new Vehicle();
+				v.Model = Convert.ToString(cmbModel.SelectedItem);
+				v.Year = Convert.ToInt16(cmbYear.SelectedItem);
+				v.Mileage = Convert.ToInt32(txtMileage.Text);
+				v.Condition = Convert.ToString(cmbCondition.SelectedItem);
+				v.Price = Convert.ToDouble(txtPrice.Text);
+				v.Color = txtColor.Text;
+				VehicalDB.AddVehical(v);
+				///////////////////////////ADD Vehicle to database!!!!!!! HERE!!!!
+				MessageBox.Show("Vehical added");
+			}
+			else
+			{
+				MessageBox.Show("Invalid Data!");
 			}
 		}
 	}
