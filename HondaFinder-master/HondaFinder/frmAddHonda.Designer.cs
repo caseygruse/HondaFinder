@@ -62,6 +62,7 @@
 			this.btnSearch.TabIndex = 21;
 			this.btnSearch.Text = "Add Honda";
 			this.btnSearch.UseVisualStyleBackColor = true;
+			this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
 			// 
 			// txtColor
 			// 

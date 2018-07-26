@@ -16,6 +16,7 @@ namespace HondaFinder
         {
             InitializeComponent();
         }
+		
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -72,13 +73,86 @@ namespace HondaFinder
 		/// </summary>
 		private void AddVehicalConditions()
 		{
-
 			cmbCondition.Items.Add("Outstanding");
 			cmbCondition.Items.Add("Clean");
 			cmbCondition.Items.Add("Average");
 			cmbCondition.Items.Add("Rough");
 			cmbCondition.Items.Add("Damaged");
+		}
+		
+		private bool IsValid()
+		{
+			return true;
+		}
 
+		/// <summary>
+		/// checks for empty inputs
+		/// </summary>
+		/// <param name="box"></param>
+		/// <returns></returns>
+		private bool CheckForWhiteSpace(TextBox box)
+		{
+			if (box.Text.Trim() == "")
+			{
+				//add error
+				return false;
+			}
+			return true;
+		}
+		/// <summary>
+		/// validates Mileage box for whitespace and Int32
+		/// </summary>
+		/// <param name="box"></param>
+		/// <returns></returns>
+		private bool ValidateMileage(TextBox box)
+		{
+			if (CheckForWhiteSpace(box))
+			{
+				try
+				{
+					Convert.ToInt32(box.Text);
+					return true;
+				}
+				catch
+				{
+					return false;
+				}
+			}
+			return false;
+		}
+
+		private bool ValidatePrice(TextBox box)
+		{
+			if (CheckForWhiteSpace(box))
+			{
+				try
+				{
+					Convert.ToDouble(box.Text);
+					return true;
+				}
+				catch
+				{
+					return false;
+				}
+			}
+			return false;
+		}
+
+		private bool ValidateColor(TextBox box)
+		{
+			if (CheckForWhiteSpace(box))
+			{
+				return true;
+			}
+			return false;
+		}
+
+		private void btnSearch_Click(object sender, EventArgs e)
+		{
+			if (ValidateMileage(txtMileage) && ValidatePrice(txtPrice) && ValidateColor(txtColor))
+			{
+				MessageBox.Show("works");
+			}
 		}
 	}
 }
