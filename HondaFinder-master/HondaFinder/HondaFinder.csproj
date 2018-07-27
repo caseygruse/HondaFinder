@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="VehicalDB.cs" />
     <Compile Include="entity\HondaDBContext.cs" />
     <Compile Include="Migrations\201807241858246_Added Classes.cs" />
     <Compile Include="Migrations\201807241858246_Added Classes.Designer.cs">
