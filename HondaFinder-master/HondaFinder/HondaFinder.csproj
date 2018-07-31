@@ -55,6 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerDB.cs" />
+    <Compile Include="frmDeleteCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteCustomer.Designer.cs">
+      <DependentUpon>frmDeleteCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="VehicalDB.cs" />
     <Compile Include="entity\HondaDBContext.cs" />
     <Compile Include="Migrations\201807241858246_Added Classes.cs" />
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCreateAccount.resx">
       <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteCustomer.resx">
+      <DependentUpon>frmDeleteCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHondaSearch.resx">
       <DependentUpon>frmHondaSearch.cs</DependentUpon>

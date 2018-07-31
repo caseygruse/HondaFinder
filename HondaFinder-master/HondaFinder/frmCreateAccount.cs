@@ -70,7 +70,8 @@ namespace HondaFinder
 				//validate for zip which is an int.
 				c.ZipCode = Convert.ToInt32(txtZip.Text);
 				CustomerDB.AddCustomer(c);
-				MessageBox.Show("Customer Added");
+				MessageBox.Show($"Customer Added.\nCustomer ID: {c.CustomerID}");
+
 			}
 			else
 			{

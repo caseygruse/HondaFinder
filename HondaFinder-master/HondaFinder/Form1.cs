@@ -39,5 +39,11 @@ namespace HondaFinder
             frmCreateAccount createAccount = new frmCreateAccount();
             createAccount.Show();
         }
+
+        private void btnDeleteCustomer_Click(object sender, EventArgs e)
+        {
+            frmDeleteCustomer deleteCustomer = new frmDeleteCustomer();
+            deleteCustomer.Show();
+        }
     }
 }

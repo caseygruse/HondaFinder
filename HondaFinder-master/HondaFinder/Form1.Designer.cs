@@ -32,11 +32,12 @@
             this.btnCreateAccount = new System.Windows.Forms.Button();
             this.btnSearchHonda = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnDeleteCustomer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddHonda
             // 
-            this.btnAddHonda.Location = new System.Drawing.Point(25, 47);
+            this.btnAddHonda.Location = new System.Drawing.Point(25, 22);
             this.btnAddHonda.Name = "btnAddHonda";
             this.btnAddHonda.Size = new System.Drawing.Size(131, 77);
             this.btnAddHonda.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // btnCreateAccount
             // 
-            this.btnCreateAccount.Location = new System.Drawing.Point(215, 47);
+            this.btnCreateAccount.Location = new System.Drawing.Point(215, 22);
             this.btnCreateAccount.Name = "btnCreateAccount";
             this.btnCreateAccount.Size = new System.Drawing.Size(131, 77);
             this.btnCreateAccount.TabIndex = 2;
@@ -56,7 +57,7 @@
             // 
             // btnSearchHonda
             // 
-            this.btnSearchHonda.Location = new System.Drawing.Point(395, 47);
+            this.btnSearchHonda.Location = new System.Drawing.Point(395, 22);
             this.btnSearchHonda.Name = "btnSearchHonda";
             this.btnSearchHonda.Size = new System.Drawing.Size(131, 77);
             this.btnSearchHonda.TabIndex = 3;
@@ -74,11 +75,22 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.button4_Click);
             // 
+            // btnDeleteCustomer
+            // 
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(215, 122);
+            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
+            this.btnDeleteCustomer.Size = new System.Drawing.Size(131, 73);
+            this.btnDeleteCustomer.TabIndex = 5;
+            this.btnDeleteCustomer.Text = "Delete Customer";
+            this.btnDeleteCustomer.UseVisualStyleBackColor = true;
+            this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 321);
+            this.Controls.Add(this.btnDeleteCustomer);
             this.Controls.Add(this.btnSearchHonda);
             this.Controls.Add(this.btnCreateAccount);
             this.Controls.Add(this.btnExit);
@@ -95,6 +107,7 @@
         private System.Windows.Forms.Button btnCreateAccount;
         private System.Windows.Forms.Button btnSearchHonda;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnDeleteCustomer;
     }
 }
 

@@ -18,5 +18,15 @@ namespace HondaFinder
 			//save changes
 			context.SaveChanges();
 		}
+
+        public static void Delete(int id)
+        {
+            var context = new HondaDBContext();
+            Customer c = context.Customers.Find(id);
+
+            context.Customers.Remove(c);
+            context.SaveChanges();
+
+        }
 	}
 }
