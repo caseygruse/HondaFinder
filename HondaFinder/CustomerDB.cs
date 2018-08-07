@@ -1,6 +1,7 @@
 ﻿using HondaFinder.entity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,5 +45,17 @@ namespace HondaFinder
 
             return context.Customers.Find(id);
         }
-	}
+
+        public static void Update(Customer c)
+        {
+            HondaDBContext context = new HondaDBContext();
+
+            //tell EF this product has only been modified
+            //its already in the db
+            context.Entry(c).State = EntityState.Modified;
+
+            //sends update query to the database
+            context.SaveChanges();
+        }
+    }
 }

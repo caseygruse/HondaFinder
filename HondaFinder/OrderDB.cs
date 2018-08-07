@@ -1,6 +1,7 @@
 ﻿using HondaFinder.entity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,18 @@ namespace HondaFinder
             context.CustomerOrders.Remove(o);
             context.SaveChanges();
 
+        }
+
+        public static void Update(CustomerOrder o)
+        {
+            HondaDBContext context = new HondaDBContext();
+
+            //tell EF this product has only been modified
+            //its already in the db
+            context.Entry(o).State = EntityState.Modified;
+
+            //sends update query to the database
+            context.SaveChanges();
         }
     }
 }
