@@ -28,5 +28,21 @@ namespace HondaFinder
             context.SaveChanges();
 
         }
+
+        public static List<Customer> GetAllCustomers()
+        {
+            HondaDBContext context = new HondaDBContext();
+
+            return context.Customers
+                            .OrderBy(c => c.LastName)
+                            .ToList();
+        }
+
+        public static Customer GetCustomer(int id)
+        {
+            HondaDBContext context = new HondaDBContext();
+
+            return context.Customers.Find(id);
+        }
 	}
 }
