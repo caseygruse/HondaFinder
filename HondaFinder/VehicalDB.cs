@@ -14,7 +14,7 @@ namespace HondaFinder
 		/// adds a Vehical Object to the dataBase
 		/// </summary>
 		/// <param name="v"></param>
-		public static void AddVehical(Vehicle v)
+		public static void AddVehicle(Vehicle v)
 		{
 			//creates db context
 			HondaDBContext context = new HondaDBContext();
