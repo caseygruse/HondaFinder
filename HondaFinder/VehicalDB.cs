@@ -68,7 +68,7 @@ namespace HondaFinder
             HondaDBContext context = new HondaDBContext();
 
             List<Vehicle> vehicles = (from v in context.Vehicles
-                                      where v.Price <= highPrice & v.Price >= lowPrice
+                                      where v.Price <= highPrice && v.Price >= lowPrice
                                       select v).ToList();
 
             return vehicles;

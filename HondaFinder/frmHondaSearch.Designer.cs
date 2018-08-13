@@ -40,10 +40,7 @@
 			this.btnSearch = new System.Windows.Forms.Button();
 			this.btnExit = new System.Windows.Forms.Button();
 			this.cmbYear = new System.Windows.Forms.ComboBox();
-			this.txtMinMileage = new System.Windows.Forms.TextBox();
 			this.txtMaxMileage = new System.Windows.Forms.TextBox();
-			this.lblMinMileagae = new System.Windows.Forms.Label();
-			this.lblMaxMileage = new System.Windows.Forms.Label();
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.txtMaxPrice = new System.Windows.Forms.TextBox();
 			this.lblMinPrice = new System.Windows.Forms.Label();
@@ -71,16 +68,16 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(12, 104);
+			this.label3.Location = new System.Drawing.Point(10, 104);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(47, 13);
+			this.label3.Size = new System.Drawing.Size(70, 13);
 			this.label3.TabIndex = 0;
-			this.label3.Text = "Mileage:";
+			this.label3.Text = "Max Mileage:";
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(12, 180);
+			this.label4.Location = new System.Drawing.Point(10, 152);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(54, 13);
 			this.label4.TabIndex = 0;
@@ -89,7 +86,7 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(12, 224);
+			this.label5.Location = new System.Drawing.Point(10, 193);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(34, 13);
 			this.label5.TabIndex = 0;
@@ -98,7 +95,7 @@
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(12, 305);
+			this.label6.Location = new System.Drawing.Point(10, 280);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(34, 13);
 			this.label6.TabIndex = 0;
@@ -116,14 +113,14 @@
 			// cmbCondition
 			// 
 			this.cmbCondition.FormattingEnabled = true;
-			this.cmbCondition.Location = new System.Drawing.Point(77, 180);
+			this.cmbCondition.Location = new System.Drawing.Point(77, 149);
 			this.cmbCondition.Name = "cmbCondition";
 			this.cmbCondition.Size = new System.Drawing.Size(121, 21);
 			this.cmbCondition.TabIndex = 4;
 			// 
 			// txtColor
 			// 
-			this.txtColor.Location = new System.Drawing.Point(77, 305);
+			this.txtColor.Location = new System.Drawing.Point(77, 277);
 			this.txtColor.Name = "txtColor";
 			this.txtColor.Size = new System.Drawing.Size(121, 20);
 			this.txtColor.TabIndex = 6;
@@ -156,48 +153,23 @@
 			this.cmbYear.Size = new System.Drawing.Size(121, 21);
 			this.cmbYear.TabIndex = 8;
 			// 
-			// txtMinMileage
-			// 
-			this.txtMinMileage.Location = new System.Drawing.Point(98, 104);
-			this.txtMinMileage.Name = "txtMinMileage";
-			this.txtMinMileage.Size = new System.Drawing.Size(100, 20);
-			this.txtMinMileage.TabIndex = 9;
-			// 
 			// txtMaxMileage
 			// 
-			this.txtMaxMileage.Location = new System.Drawing.Point(98, 142);
+			this.txtMaxMileage.Location = new System.Drawing.Point(98, 104);
 			this.txtMaxMileage.Name = "txtMaxMileage";
 			this.txtMaxMileage.Size = new System.Drawing.Size(100, 20);
 			this.txtMaxMileage.TabIndex = 10;
 			// 
-			// lblMinMileagae
-			// 
-			this.lblMinMileagae.AutoSize = true;
-			this.lblMinMileagae.Location = new System.Drawing.Point(66, 104);
-			this.lblMinMileagae.Name = "lblMinMileagae";
-			this.lblMinMileagae.Size = new System.Drawing.Size(26, 13);
-			this.lblMinMileagae.TabIndex = 11;
-			this.lblMinMileagae.Text = "min:";
-			// 
-			// lblMaxMileage
-			// 
-			this.lblMaxMileage.AutoSize = true;
-			this.lblMaxMileage.Location = new System.Drawing.Point(66, 142);
-			this.lblMaxMileage.Name = "lblMaxMileage";
-			this.lblMaxMileage.Size = new System.Drawing.Size(29, 13);
-			this.lblMaxMileage.TabIndex = 12;
-			this.lblMaxMileage.Text = "max:";
-			// 
 			// textBox3
 			// 
-			this.textBox3.Location = new System.Drawing.Point(98, 224);
+			this.textBox3.Location = new System.Drawing.Point(98, 193);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(100, 20);
 			this.textBox3.TabIndex = 13;
 			// 
 			// txtMaxPrice
 			// 
-			this.txtMaxPrice.Location = new System.Drawing.Point(98, 266);
+			this.txtMaxPrice.Location = new System.Drawing.Point(98, 236);
 			this.txtMaxPrice.Name = "txtMaxPrice";
 			this.txtMaxPrice.Size = new System.Drawing.Size(100, 20);
 			this.txtMaxPrice.TabIndex = 14;
@@ -205,7 +177,7 @@
 			// lblMinPrice
 			// 
 			this.lblMinPrice.AutoSize = true;
-			this.lblMinPrice.Location = new System.Drawing.Point(66, 224);
+			this.lblMinPrice.Location = new System.Drawing.Point(65, 193);
 			this.lblMinPrice.Name = "lblMinPrice";
 			this.lblMinPrice.Size = new System.Drawing.Size(26, 13);
 			this.lblMinPrice.TabIndex = 15;
@@ -214,7 +186,7 @@
 			// lblMaxPrice
 			// 
 			this.lblMaxPrice.AutoSize = true;
-			this.lblMaxPrice.Location = new System.Drawing.Point(65, 266);
+			this.lblMaxPrice.Location = new System.Drawing.Point(62, 243);
 			this.lblMaxPrice.Name = "lblMaxPrice";
 			this.lblMaxPrice.Size = new System.Drawing.Size(29, 13);
 			this.lblMaxPrice.TabIndex = 16;
@@ -224,15 +196,12 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(278, 540);
+			this.ClientSize = new System.Drawing.Size(300, 540);
 			this.Controls.Add(this.lblMaxPrice);
 			this.Controls.Add(this.lblMinPrice);
 			this.Controls.Add(this.txtMaxPrice);
 			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.lblMaxMileage);
-			this.Controls.Add(this.lblMinMileagae);
 			this.Controls.Add(this.txtMaxMileage);
-			this.Controls.Add(this.txtMinMileage);
 			this.Controls.Add(this.cmbYear);
 			this.Controls.Add(this.btnExit);
 			this.Controls.Add(this.btnSearch);
@@ -267,10 +236,7 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnExit;
 		private System.Windows.Forms.ComboBox cmbYear;
-		private System.Windows.Forms.TextBox txtMinMileage;
 		private System.Windows.Forms.TextBox txtMaxMileage;
-		private System.Windows.Forms.Label lblMinMileagae;
-		private System.Windows.Forms.Label lblMaxMileage;
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.TextBox txtMaxPrice;
 		private System.Windows.Forms.Label lblMinPrice;
