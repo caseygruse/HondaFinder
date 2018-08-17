@@ -46,6 +46,15 @@ namespace HondaFinder
             return context.Customers.Find(id);
         }
 
+		//public static bool CheckForCustomerID(int id)
+		//{
+		//	HondaDBContext context = new HondaDBContext();
+		//	try
+		//	{
+		//		context.Customers.Find(id);
+		//	}
+		//}
+
         public static void Update(Customer c)
         {
             HondaDBContext context = new HondaDBContext();

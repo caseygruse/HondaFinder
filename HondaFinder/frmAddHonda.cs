@@ -175,13 +175,32 @@ namespace HondaFinder
 				v.Condition = Convert.ToString(cmbCondition.SelectedItem);
 				v.Price = Convert.ToDouble(txtPrice.Text);
 				v.Color = txtColor.Text;
+				
 				VehicalDB.AddVehicle(v);
 				///////////////////////////ADD Vehicle to database!!!!!!! HERE!!!!
 				MessageBox.Show("Vehical added");
+				CleanForm();
 			}
 			else
 			{
 				MessageBox.Show("Invalid Data!");
+			}
+		}
+		/// <summary>
+		/// Clears all text from forms
+		/// </summary>
+		private void CleanForm()
+		{
+			foreach (var c in this.Controls)
+			{
+				if (c is TextBox)
+				{
+					((TextBox)c).Text = String.Empty;
+				}
+				if(c is ComboBox)
+				{
+					((ComboBox)c).Text = String.Empty;
+				}
 			}
 		}
 	}

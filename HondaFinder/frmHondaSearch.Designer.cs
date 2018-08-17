@@ -45,6 +45,11 @@
 			this.txtMaxPrice = new System.Windows.Forms.TextBox();
 			this.lblMinPrice = new System.Windows.Forms.Label();
 			this.lblMaxPrice = new System.Windows.Forms.Label();
+			this.lbDisplayedHondas = new System.Windows.Forms.ListBox();
+			this.btnViewAllHondas = new System.Windows.Forms.Button();
+			this.btnOrderHonda = new System.Windows.Forms.Button();
+			this.txtCustomerID = new System.Windows.Forms.TextBox();
+			this.lblCustomerID = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -192,11 +197,60 @@
 			this.lblMaxPrice.TabIndex = 16;
 			this.lblMaxPrice.Text = "max:";
 			// 
+			// lbDisplayedHondas
+			// 
+			this.lbDisplayedHondas.FormattingEnabled = true;
+			this.lbDisplayedHondas.Location = new System.Drawing.Point(274, 31);
+			this.lbDisplayedHondas.Name = "lbDisplayedHondas";
+			this.lbDisplayedHondas.Size = new System.Drawing.Size(447, 368);
+			this.lbDisplayedHondas.TabIndex = 17;
+			// 
+			// btnViewAllHondas
+			// 
+			this.btnViewAllHondas.Location = new System.Drawing.Point(15, 445);
+			this.btnViewAllHondas.Name = "btnViewAllHondas";
+			this.btnViewAllHondas.Size = new System.Drawing.Size(95, 54);
+			this.btnViewAllHondas.TabIndex = 18;
+			this.btnViewAllHondas.Text = "View All Hondas";
+			this.btnViewAllHondas.UseVisualStyleBackColor = true;
+			this.btnViewAllHondas.Click += new System.EventHandler(this.btnViewAllHondas_Click);
+			// 
+			// btnOrderHonda
+			// 
+			this.btnOrderHonda.Location = new System.Drawing.Point(143, 445);
+			this.btnOrderHonda.Name = "btnOrderHonda";
+			this.btnOrderHonda.Size = new System.Drawing.Size(95, 54);
+			this.btnOrderHonda.TabIndex = 19;
+			this.btnOrderHonda.Text = "Order Honda";
+			this.btnOrderHonda.UseVisualStyleBackColor = true;
+			this.btnOrderHonda.Click += new System.EventHandler(this.btnOrderHonda_Click);
+			// 
+			// txtCustomerID
+			// 
+			this.txtCustomerID.Location = new System.Drawing.Point(274, 445);
+			this.txtCustomerID.Name = "txtCustomerID";
+			this.txtCustomerID.Size = new System.Drawing.Size(100, 20);
+			this.txtCustomerID.TabIndex = 20;
+			// 
+			// lblCustomerID
+			// 
+			this.lblCustomerID.AutoSize = true;
+			this.lblCustomerID.Location = new System.Drawing.Point(271, 419);
+			this.lblCustomerID.Name = "lblCustomerID";
+			this.lblCustomerID.Size = new System.Drawing.Size(62, 13);
+			this.lblCustomerID.TabIndex = 21;
+			this.lblCustomerID.Text = "CustomerID";
+			// 
 			// frmHondaSearch
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(300, 540);
+			this.ClientSize = new System.Drawing.Size(863, 540);
+			this.Controls.Add(this.lblCustomerID);
+			this.Controls.Add(this.txtCustomerID);
+			this.Controls.Add(this.btnOrderHonda);
+			this.Controls.Add(this.btnViewAllHondas);
+			this.Controls.Add(this.lbDisplayedHondas);
 			this.Controls.Add(this.lblMaxPrice);
 			this.Controls.Add(this.lblMinPrice);
 			this.Controls.Add(this.txtMaxPrice);
@@ -241,5 +295,10 @@
 		private System.Windows.Forms.TextBox txtMaxPrice;
 		private System.Windows.Forms.Label lblMinPrice;
 		private System.Windows.Forms.Label lblMaxPrice;
+		private System.Windows.Forms.ListBox lbDisplayedHondas;
+		private System.Windows.Forms.Button btnViewAllHondas;
+		private System.Windows.Forms.Button btnOrderHonda;
+		private System.Windows.Forms.TextBox txtCustomerID;
+		private System.Windows.Forms.Label lblCustomerID;
 	}
 }

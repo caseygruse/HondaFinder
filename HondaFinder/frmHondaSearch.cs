@@ -74,5 +74,57 @@ namespace HondaFinder
 			cmbCondition.Items.Add("Rough");
 			cmbCondition.Items.Add("Damaged");
 		}
+		/// <summary>
+		/// Displays all hondas in the DB and displays them in a listBox for selection
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void btnViewAllHondas_Click(object sender, EventArgs e)
+		{
+			List<Vehicle> hondas = VehicalDB.GetAllVehicles();
+
+			foreach(Vehicle v in hondas)
+			{
+				lbDisplayedHondas.Items.Add(v);
+			}
+			
+		}
+		/// <summary>
+		/// Add selected honda from the list box to db for the customer with the ID entered into the 
+		/// text box labled customerID.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void btnOrderHonda_Click(object sender, EventArgs e)
+		{
+			CustomerOrder order = new CustomerOrder();
+
+			Vehicle v = (Vehicle)lbDisplayedHondas.SelectedItem;
+			if (ValidateCustomerId())
+			{
+				order.VinNumber = v.VinNumber;
+				order.CustomerID = Convert.ToInt16(txtCustomerID.Text);
+				order.OrderDate = DateTime.Now;
+				OrderDB.AddOrder(order);
+				MessageBox.Show("Your order was placed");
+			}
+		}
+
+		private bool ValidateCustomerId()
+		{
+			try
+			{
+				int cusId = Convert.ToInt16(txtCustomerID.Text);
+				CustomerDB.GetCustomer(cusId);
+				return true;
+
+			}
+			catch
+			{
+				MessageBox.Show("CustomerID is not valid!");
+				return false;
+			}
+			
+		}
 	}
 }

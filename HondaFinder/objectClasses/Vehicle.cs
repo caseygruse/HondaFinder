@@ -10,6 +10,7 @@ public class Vehicle
 	public Vehicle()
 	{
 	}
+
 	[Key]
     public int VinNumber { get; set; }
 
@@ -24,5 +25,11 @@ public class Vehicle
     public double Price { get; set; }
 
     public string Color { get; set; }
+
+
+	public override string ToString()
+	{
+		return $"Model: {Model},  Year: {Year},  Mileage: {Mileage},  Condition: {Condition},  Price: {Price},  Color: {Color}";
+	}
 
 }
