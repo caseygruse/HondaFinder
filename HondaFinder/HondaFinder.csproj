@@ -61,6 +61,12 @@
     <Compile Include="frmDeleteCustomer.Designer.cs">
       <DependentUpon>frmDeleteCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFindCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindCustomer.Designer.cs">
+      <DependentUpon>frmFindCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderDB.cs" />
     <Compile Include="VehicalDB.cs" />
     <Compile Include="entity\HondaDBContext.cs" />
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeleteCustomer.resx">
       <DependentUpon>frmDeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindCustomer.resx">
+      <DependentUpon>frmFindCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHondaSearch.resx">
       <DependentUpon>frmHondaSearch.cs</DependentUpon>
