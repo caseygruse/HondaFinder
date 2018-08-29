@@ -33,6 +33,7 @@
             this.btnSearchHonda = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDeleteCustomer = new System.Windows.Forms.Button();
+            this.btnFindCustomer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddHonda
@@ -85,11 +86,22 @@
             this.btnDeleteCustomer.UseVisualStyleBackColor = true;
             this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
             // 
+            // btnFindCustomer
+            // 
+            this.btnFindCustomer.Location = new System.Drawing.Point(25, 122);
+            this.btnFindCustomer.Name = "btnFindCustomer";
+            this.btnFindCustomer.Size = new System.Drawing.Size(134, 73);
+            this.btnFindCustomer.TabIndex = 6;
+            this.btnFindCustomer.Text = "Find Customer";
+            this.btnFindCustomer.UseVisualStyleBackColor = true;
+            this.btnFindCustomer.Click += new System.EventHandler(this.btnFindCustomer_Click);
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 321);
+            this.Controls.Add(this.btnFindCustomer);
             this.Controls.Add(this.btnDeleteCustomer);
             this.Controls.Add(this.btnSearchHonda);
             this.Controls.Add(this.btnCreateAccount);
@@ -108,6 +120,7 @@
         private System.Windows.Forms.Button btnSearchHonda;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnDeleteCustomer;
+        private System.Windows.Forms.Button btnFindCustomer;
     }
 }
 

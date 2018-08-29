@@ -45,5 +45,11 @@ namespace HondaFinder
             frmDeleteCustomer deleteCustomer = new frmDeleteCustomer();
             deleteCustomer.Show();
         }
+
+        private void btnFindCustomer_Click(object sender, EventArgs e)
+        {
+            frmFindCustomer findCustomer = new frmFindCustomer();
+            findCustomer.Show();
+        }
     }
 }
